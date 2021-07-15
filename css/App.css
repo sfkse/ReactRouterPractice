@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+.App {
+  background-color: #3b3b3b;
+  min-height: 100vh;
+}
+
+.App .title-container {
+  background-color: #2d911b;
+  padding: 0.3em 0;
+}
+
+.App .title-container .main-title {
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 3rem;
+  color: azure;
+}
+
+.App .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em;
+}
+
+.App .container .list-wrapper {
+  cursor: pointer;
+  margin-bottom: 2em;
+  overflow: hidden;
+  position: relative;
+}
+
+.App .container .list-wrapper img {
+  width: 250px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.App .container .list-wrapper .detail {
+  padding: 0.5em;
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.App .container .list-wrapper:hover .detail {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.App .container .detail-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.App .container .detail-wrapper .img-container {
+  width: 400px;
+  overflow: hidden;
+}
+
+.App .container .detail-wrapper .img-container img {
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  overflow: hidden;
+}
+
+.App .container .detail-wrapper .detail-container {
+  margin-left: 3em;
+}
+
+.App .container .detail-wrapper .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #2d911b;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.App .container .detail-wrapper .btn:hover {
+  background-color: #fff;
+  color: #2d911b;
+  cursor: pointer;
+}
+/*# sourceMappingURL=App.css.map */

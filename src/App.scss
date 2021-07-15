@@ -1,0 +1,100 @@
+@import "./style/component";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+
+.App {
+  background-color: #3b3b3b;
+  min-height: 100vh;
+
+  .title-container {
+    background-color: #2d911b;
+    padding: 0.3em 0;
+
+    .main-title {
+      text-align: center;
+      font-family: "Inconsolata", monospace;
+      font-size: 3rem;
+      color: azure;
+    }
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3em;
+
+    .list-wrapper {
+      cursor: pointer;
+      margin-bottom: 2em;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+      }
+      .detail {
+        padding: 0.5em;
+        text-align: center;
+        transform: translateY(50%);
+        transition: 0.3s all;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &:hover {
+        .detail {
+          transform: translateY(0);
+        }
+      }
+    }
+    .detail-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: relative;
+
+      .img-container {
+        width: 400px;
+
+        overflow: hidden;
+        img {
+          width: 100%;
+          max-height: 500px;
+          object-fit: cover;
+          object-position: top;
+          overflow: hidden;
+        }
+      }
+
+      .detail-container {
+        margin-left: 3em;
+      }
+
+      .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: #2d911b;
+        color: #fff;
+        padding: 1em 2em;
+        border-radius: 5px;
+        transition: 0.3s all;
+
+        &:hover {
+          background-color: #fff;
+          color: #2d911b;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
