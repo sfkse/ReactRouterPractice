@@ -116,4 +116,36 @@
   color: #2d911b;
   cursor: pointer;
 }
+
+.App .container .notFound {
+  position: relative;
+}
+
+.App .container .notFound h2 {
+  color: #fff;
+}
+
+.App .container .notFound .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #2d911b;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+}
+
+.App .container .notFound .back:hover {
+  background-color: #fff;
+  color: #2d911b;
+  cursor: pointer;
+}
 /*# sourceMappingURL=App.css.map */

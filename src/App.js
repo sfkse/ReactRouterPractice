@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import List from './components/List.js'
 import Details from './components/Details';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={List} />
             <Route path="/details/:id" component={Details} />
+            <Route component={NotFound} />
           </Switch>
 
         </div>
