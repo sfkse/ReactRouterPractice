@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <div className="title-container">
           <h1 className="main-title">Breaking Bad</h1>
