@@ -1,4 +1,4 @@
-# Listing Users From Api
+# React Router Project
 
 In this exercise I used Breaking Bad's api for character listing. Basic usage of react-router-dom is shown.
 
