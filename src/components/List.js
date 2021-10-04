@@ -17,7 +17,7 @@ const List = () => {
     }, [])
 
     const handleClick = (id) => {
-        console.log(id)
+       // console.log(id)
         history.push(`details/${id}`)
     }
 
